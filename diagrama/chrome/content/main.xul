@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<window id="main" title="Editor de Diagramas" width="900" height="700"  
+           xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script type="application/javascript" src="chrome://diagrama/content/main.js"/>
+  <script type="application/javascript" src="chrome://diagrama/content/d3.js"/>
+  <script type="application/javascript" src="chrome://diagrama/content/joint.all.min.js"></script>
+  
+  <vbox>
+  <menubar id="viewer-menubar">
+    <menu id="file-menu" label="File">
+      <menupopup id="file-popup">
+        <menuitem label="Open" oncommand="file.open();"/>
+        <menuitem label="Save" oncommand="file.save();"/>
+      </menupopup>
+    </menu>
+  </menubar>
+  <box flex="1"/>
+  <div id="world"></div>
+  </vbox>  
+  
+</window>

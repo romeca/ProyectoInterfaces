@@ -1,0 +1,7 @@
+<clases>
+  <clase nombre="Vehiculo" atributos="-motor:int" metodos="$avanzar()"/>
+  <clase nombre="Automovil" atributos="-edad:int$-estado:string" metodos=""/>
+  <clase nombre="Camioneta" atributos="" metodos="+detenerse()"/>
+  <conexion clase1="Camioneta" clase2="Vehiculo"/>
+  <conexion clase1="Automovil" clase2="Vehiculo"/>
+</clases>
